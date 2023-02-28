@@ -8,7 +8,7 @@ $links = config('menu')
         <figure>
             <img src="{{ asset('img/dc-logo.png') }}" alt="">
         </figure>
-        <ul>
+        <ul class="m-0">
             @foreach($links as $link)
             <li><a class="@if (Route::is($link['route_name'])) active @endif" href="{{  route($link['route_name'])  }}">{{$link['title']}}</a></li>
             @endforeach
