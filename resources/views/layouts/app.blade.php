@@ -16,7 +16,7 @@
     @include('includes.jumbo')
 
     {{-- main --}}
-    <main class="container">
+    <main>
         @yield('content')
     </main>
 
