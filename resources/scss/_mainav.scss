@@ -1,0 +1,35 @@
+#main-nav{
+    max-width: 100%;
+    background-image: url('../img/footer-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .flex-list{
+        display: flex;
+        justify-content: space-between;
+
+        h4{
+            color: #fff;
+            margin: 5px 0;
+            font-weight: 600;
+        }
+
+        li{
+            color: #73746A;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            font-size: 10px;
+            cursor: pointer;
+
+            &:hover{
+                color: #FDE06B;
+                text-shadow: 1px 0 10px;
+            }
+        }
+
+        figure{
+            width: 195px;
+        }
+    }
+}

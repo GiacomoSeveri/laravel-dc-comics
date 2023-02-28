@@ -1,0 +1,29 @@
+footer{
+    background-color: #303030;
+
+.flex-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button{
+        cursor: pointer;
+        padding: 10px 6px;
+        background-color: transparent;
+        color: #0282F9;
+        font-weight: 600;
+        border: solid 2px #0282F9;
+    }
+
+    p{
+        color: #0282F9;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    img{
+        cursor: pointer;
+        margin-left: 15px;
+    }
+}
+}
