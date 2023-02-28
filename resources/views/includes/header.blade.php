@@ -10,7 +10,7 @@ $links = config('menu')
         </figure>
         <ul>
             @foreach($links as $link)
-            <li><a href="{{  route($link['route_name'])  }}">{{$link['title']}}</a></li>
+            <li><a class="@if (Route::is($link['route_name'])) active @endif" href="{{  route($link['route_name'])  }}">{{$link['title']}}</a></li>
             @endforeach
         </ul>
         <input type="text" name="serch" placeholder="serch">
