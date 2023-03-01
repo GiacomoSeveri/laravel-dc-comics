@@ -6,7 +6,7 @@
     <figcaption class="my-3">
         <img src="{{ $comics->thumb }}" alt="{{ $comics->title }}" class="img-fluid" width="200">
     </figcaption>
-    <h1 class="text-primary">{{ $comics->title }}</h1>
+    <h1 class="text-primary-emphasis">{{ $comics->title }}</h1>
     
     <div class="d-flex justify-content-between">
         <div>
@@ -42,7 +42,7 @@
             <div class="specs">
                 <p><strong class="text-primary">Series : </strong>{{ $comics->series }}</p>
                 <p class="text-success"><strong class="text-primary">U.S.Price: </strong> {{ $comics->price }}</p>
-                <p><strong class="text-primary">Series : </strong>{{ $comics->sale_date }}</p>
+                <p><strong class="text-primary">Sale date : </strong>{{ $comics->sale_date }}</p>
             </div>
         </div>
     </div>

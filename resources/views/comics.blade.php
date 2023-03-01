@@ -1,8 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+{{-- jumbotron --}}
+@include('includes.jumbo')
 <main>
-    <section id="comics" class="my">
+    <section id="comics" class="my border-top">
         <div class="container">
             <ul>
                 @foreach($comics as $comic)
@@ -17,7 +19,7 @@
         </div>
         <div class="text-center">
             <a class="btn btn-primary">SING-UP NOW</a>
-            <a class="btn btn-primary ms-2">ADD COMICS</a>
+            <a href="{{ route('comics.create') }}" class="btn btn-primary ms-2">ADD COMICS</a>
         </div>
     </section>
 

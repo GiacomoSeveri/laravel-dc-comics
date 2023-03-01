@@ -3,7 +3,7 @@ $links = config('menu')
 @endphp
 
 
-<header class="my">
+<header class="my bg-custom">
     <div class="container flex-header">
         <figure>
             <img src="{{ asset('img/dc-logo.png') }}" alt="">
