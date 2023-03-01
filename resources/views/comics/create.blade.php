@@ -44,8 +44,8 @@
                 </div>
                 <div class="col-6">
                     <div class="mb-3">
-                        <label for="artist" class="form-label">Artist</label>
-                        <input type="text" class="form-control" id="artist" name="artist" required>
+                        <label for="artists" class="form-label">Artists</label>
+                        <input type="text" class="form-control" id="artists" name="artists" required>
                       </div>
                 </div>
                 <div class="col-6">

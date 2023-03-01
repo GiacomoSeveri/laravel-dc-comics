@@ -4,11 +4,11 @@
 <div class="container my-5">
 
     <figcaption class="my-3">
-        <img src="{{ $comics->thumb }}" alt="{{ $comics->title }}" class="img-fluid" width="200">
+        <img src="{{ $comics->thumb }}" alt="{{ $comics->title }}" class="img-fluid border-custom" width="200">
     </figcaption>
     <h1 class="text-primary-emphasis">{{ $comics->title }}</h1>
     
-    <div class="d-flex justify-content-between">
+    <div class="d-flex justify-content-between show-data">
         <div>
             <div class='bg-success d-flex justify-content-between text-light p-2'>
                 <div class='d-flex'>
@@ -41,7 +41,7 @@
             <h3 class="text-primary">Specs</h3>
             <div class="specs">
                 <p><strong class="text-primary">Series : </strong>{{ $comics->series }}</p>
-                <p class="text-success"><strong class="text-primary">U.S.Price: </strong> {{ $comics->price }}</p>
+                <p class="text-success"><strong class="text-primary">U.S.Price: </strong>$ {{ $comics->price }}</p>
                 <p><strong class="text-primary">Sale date : </strong>{{ $comics->sale_date }}</p>
             </div>
         </div>
