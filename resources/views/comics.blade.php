@@ -16,7 +16,8 @@
             </ul>
         </div>
         <div class="text-center">
-            <button type="button" class="">SING-UP NOW</button>
+            <a class="btn btn-primary">SING-UP NOW</a>
+            <a class="btn btn-primary ms-2">ADD COMICS</a>
         </div>
     </section>
 

@@ -41,7 +41,7 @@
             <h3 class="text-primary">Specs</h3>
             <div class="specs">
                 <p><strong class="text-primary">Series : </strong>{{ $comics->series }}</p>
-                <p><strong class="text-primary">U.S.Price: </strong> {{ $comics->price }}</p>
+                <p class="text-success"><strong class="text-primary">U.S.Price: </strong> {{ $comics->price }}</p>
                 <p><strong class="text-primary">Series : </strong>{{ $comics->sale_date }}</p>
             </div>
         </div>
