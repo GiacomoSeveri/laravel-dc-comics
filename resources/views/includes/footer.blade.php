@@ -2,7 +2,6 @@
     <div class="container flex-footer">
         <button type="button" class="">SING-UP NOW</button>
         <div class="flex-footer">
-            <p>FOLLOW US</p>
             <img src="{{ asset('img/footer-facebook.png') }}" alt="">
             <img src="{{ asset('img/footer-twitter.png') }}" alt="">
             <img src="{{ asset('img/footer-youtube.png') }}" alt="">
