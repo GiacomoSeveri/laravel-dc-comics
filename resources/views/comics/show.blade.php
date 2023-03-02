@@ -3,8 +3,8 @@
 @section('content')
 <div class="container my-5">
 
-    <figcaption class="my-3">
-        <img src="{{ $comics->thumb }}" alt="{{ $comics->title }}" class="img-fluid border-custom" width="200">
+    <figcaption class="my-3 col-3">
+        <img src="{{ $comics->thumb }}" alt="{{ $comics->title }}" class="img-fluid border-custom" width="250">
     </figcaption>
     <h1 class="text-primary-emphasis">{{ $comics->title }}</h1>
     
@@ -46,5 +46,9 @@
             </div>
         </div>
     </div>
+    <div class="my-4">
+        <a href="{{ route('comics.edit', $comics['id']) }}" class="btn btn-primary me-1">Edit</a>
+        <a href="{{ route('comics.edit', $comics['id']) }}" class="btn btn-danger">Delete</a>
+    </div>
 </div>
-    @endsection
+@endsection

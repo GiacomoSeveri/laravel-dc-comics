@@ -18,7 +18,7 @@
             </ul>
         </div>
         <div class="text-center">
-            <a class="btn btn-primary">SING-UP NOW</a>
+            <a class="btn btn-primary">SIGN-UP NOW</a>
             <a href="{{ route('comics.create') }}" class="btn btn-primary ms-2">ADD COMICS</a>
         </div>
     </section>

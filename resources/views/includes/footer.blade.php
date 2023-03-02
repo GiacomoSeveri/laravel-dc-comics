@@ -1,6 +1,6 @@
 <footer class="my">
     <div class="container flex-footer">
-        <button type="button" class="">SING-UP NOW</button>
+        <button type="button" class="">SIGN-UP NOW</button>
         <div class="flex-footer">
             <img src="{{ asset('img/footer-facebook.png') }}" alt="">
             <img src="{{ asset('img/footer-twitter.png') }}" alt="">
