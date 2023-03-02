@@ -68,7 +68,7 @@ class ComicController extends Controller
         $comic->fill($data);
         $comic->save();
 
-        return view('comics.show', $comic->id);
+        return to_route('comics.show', $comic->id);
     }
 
     /**
