@@ -35,6 +35,7 @@ class ComicController extends Controller
         $comic = new Comic();
         $comic->fill($data);
         $comic->save();
+        // return view('comics', compact('comic'));
     }
 
     /**
@@ -64,7 +65,7 @@ class ComicController extends Controller
         $data = $request->all();
 
         $comic = Comic::findOrFail($id);
-        $comic = new Comic();
+        // $comic = new Comic();
         $comic->fill($data);
         $comic->save();
 
