@@ -4,11 +4,12 @@
 <div class="container py-3">
     <div class="card">
         <div class="card-header d-flex justify-content-between align-items-center">
-          <p class="m-0 text-success-emphasis">Add data</p>
+          <p class="m-0 text-success-emphasis">Change data</p>
           <a href="{{ route('comics.show', $comics['id']) }}" class="btn btn-primary btn-sm">GO BACK!</a>
         </div>
         <div class="card-body">
-          <form method="POST" action="{{ route('comics.store') }}">
+          <form method="POST" action="{{ route('comics.update', $comics['id']) }}">
+            @method('PUT')
             @csrf
             <div class="row">
                 <div class="col-12">
