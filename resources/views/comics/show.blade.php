@@ -46,9 +46,14 @@
             </div>
         </div>
     </div>
-    <div class="my-4">
+    <div class="d-flex my-4">
         <a href="{{ route('comics.edit', $comics['id']) }}" class="btn btn-primary me-1">Edit</a>
-        <a href="{{ route('comics.edit', $comics['id']) }}" class="btn btn-danger">Delete</a>
+        <form action="{{ route('comics.destroy', $comics['id']) }}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="btn btn-danger mx-2">Delelte</button>
+        </form>
+        <a href="{{ route('comics') }}" class="btn btn-secondary">GO BACK!</a>
     </div>
 </div>
 @endsection

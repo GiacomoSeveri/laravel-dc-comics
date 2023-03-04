@@ -35,7 +35,7 @@ class ComicController extends Controller
         $comic = new Comic();
         $comic->fill($data);
         $comic->save();
-        // return view('comics', compact('comic'));
+        return to_route('comics.show', $comic->id);
     }
 
     /**
@@ -77,6 +77,9 @@ class ComicController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $comics = Comic::findOrFail($id);
+        $comics->delete();
+
+        return to_route('comics');
     }
 }
